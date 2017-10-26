@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #compare.py by Michael Nieto
 import tkinter as tk
 from tkinter import filedialog
@@ -22,12 +22,8 @@ def comparetext(txt1, txt2):
 root = tk.Tk()
 root.withdraw()
 
-filename1 = filedialog.askopenfilename(initialdir="logs/",
-                                      title = "Select first file to compare!"
-                                      )
-filename2 = filedialog.askopenfilename(initialdir="logs/",
-                                      title = "Select second file to compare!"
-                                      )
+filename1 = filedialog.askopenfilename(title = "Select first file to compare!")
+filename2 = filedialog.askopenfilename(title = "Select second file to compare!")
 comparetext(filename1, filename2)
 
 
